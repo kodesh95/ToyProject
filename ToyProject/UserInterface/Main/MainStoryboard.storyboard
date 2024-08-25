@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22690"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="jyb-Wj-4vG">
+            <objects>
+                <windowController storyboardIdentifier="MainWindowController" id="td9-7C-jpg" customClass="MainWindowController" customModule="ToyProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="EKp-6Z-Dz9">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="425" y="462" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+                        <view key="contentView" id="9Ff-0R-osU">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="td9-7C-jpg" id="EhD-1N-tR0"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="Kll-oN-l3e" kind="relationship" relationship="window.shadowedContentViewController" id="P2x-m3-J4q"/>
+                    </connections>
+                </windowController>
+                <customObject id="5Ge-fZ-K4L" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29" y="-190"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="C8M-1T-CVC">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="Kll-oN-l3e" customClass="MainViewController" customModule="ToyProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="m5r-vz-e6u">
+                        <rect key="frame" x="0.0" y="0.0" width="481" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Og-Rb-1mR">
+                                <rect key="frame" x="173" y="93" width="135" height="32"/>
+                                <buttonCell key="cell" type="push" title="first App" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="9od-vw-XKZ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="goToFirstApp:" target="Kll-oN-l3e" id="L1S-1c-VKs"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gbG-T8-9Bh">
+                                <rect key="frame" x="173" y="143" width="135" height="32"/>
+                                <buttonCell key="cell" type="push" title="show File List" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oHy-6a-3ZX">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="goToFileListApp:" target="Kll-oN-l3e" id="cxx-CS-jcK"/>
+                                </connections>
+                            </button>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NCl-RV-WXz">
+                                <rect key="frame" x="138" y="206" width="205" height="49"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="ToyProject" id="fVf-jN-5NU">
+                                    <font key="font" size="40" name="AppleGothic"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gbG-T8-9Bh" firstAttribute="top" secondItem="m5r-vz-e6u" secondAttribute="top" constant="100" id="Aqq-jc-VBO"/>
+                            <constraint firstItem="gbG-T8-9Bh" firstAttribute="leading" secondItem="m5r-vz-e6u" secondAttribute="leading" constant="180" id="Aue-52-XCV"/>
+                            <constraint firstItem="5Og-Rb-1mR" firstAttribute="leading" secondItem="m5r-vz-e6u" secondAttribute="leading" constant="180" id="FCa-6I-rfl"/>
+                            <constraint firstItem="5Og-Rb-1mR" firstAttribute="top" secondItem="gbG-T8-9Bh" secondAttribute="bottom" constant="30" id="SW1-aw-TNy"/>
+                            <constraint firstAttribute="trailing" secondItem="5Og-Rb-1mR" secondAttribute="trailing" constant="180" id="XBg-lw-XgR"/>
+                            <constraint firstAttribute="trailing" secondItem="gbG-T8-9Bh" secondAttribute="trailing" constant="180" id="ZoH-jI-NVS"/>
+                            <constraint firstAttribute="bottom" secondItem="5Og-Rb-1mR" secondAttribute="bottom" constant="100" id="eK9-aS-oA5"/>
+                            <constraint firstItem="NCl-RV-WXz" firstAttribute="leading" secondItem="m5r-vz-e6u" secondAttribute="leading" constant="140" id="goX-ud-kvC"/>
+                            <constraint firstItem="NCl-RV-WXz" firstAttribute="top" secondItem="m5r-vz-e6u" secondAttribute="top" constant="15" id="hbN-d7-RBZ"/>
+                            <constraint firstAttribute="trailing" secondItem="NCl-RV-WXz" secondAttribute="trailing" constant="140" id="uRz-Kc-0ww"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="Fcx-ey-x8N" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="736" y="-221"/>
+        </scene>
+    </scenes>
+</document>

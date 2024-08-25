@@ -7,13 +7,99 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D79B2072C7B4E0400548585 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2BE14E2C74972400C6B118 /* Date+.swift */; };
+		7F35A8C02C74291E0043EFA4 /* ToyInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F35A8BF2C74291E0043EFA4 /* ToyInfo.plist */; };
+		7F35A8C22C7439CD0043EFA4 /* FileListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35A8C12C7439CD0043EFA4 /* FileListViewModel.swift */; };
+		7F35A8C42C7439E50043EFA4 /* FileListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F35A8C32C7439E50043EFA4 /* FileListStoryboard.storyboard */; };
+		7F35A8C62C7439FB0043EFA4 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35A8C52C7439FB0043EFA4 /* Attribute.swift */; };
+		7F35A8C82C743A210043EFA4 /* FileListWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35A8C72C743A210043EFA4 /* FileListWindowController.swift */; };
+		7F87F6C42C7830A600D7E567 /* ServiceListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87F6C22C78307D00D7E567 /* ServiceListener.swift */; };
+		7F87F6CC2C78535300D7E567 /* ToyXPCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87F6C82C7846A400D7E567 /* ToyXPCManager.swift */; };
+		7F87F6D02C78538700D7E567 /* ToyXPCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E2EB82C77411800DE4E10 /* ToyXPCProtocol.swift */; };
+		7F87F6D12C78540200D7E567 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F1C583A2C76EE6F007E7B5C /* CoreData.xcdatamodeld */; };
+		7F87F6D22C78570F00D7E567 /* OperationPersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3EB4C22C75C85400B66211 /* OperationPersistenceController.swift */; };
+		7F87F6D32C78571300D7E567 /* FileInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E2E862C76F08F00DE4E10 /* FileInfo+CoreDataProperties.swift */; };
+		7F87F6D42C78571600D7E567 /* FileInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E2E852C76F08F00DE4E10 /* FileInfo+CoreDataClass.swift */; };
+		7F87F6D52C7857DA00D7E567 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F35A8C52C7439FB0043EFA4 /* Attribute.swift */; };
+		7F87F6D72C785E4500D7E567 /* ToyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E1E732C73303800BDA9E5 /* ToyViewModel.swift */; };
+		7F87F6D82C786DA200D7E567 /* XPCService+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87F6C02C78242800D7E567 /* XPCService+.swift */; };
+		7F87F6DA2C786E2C00D7E567 /* Clone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F87F6D92C786E2C00D7E567 /* Clone.swift */; };
+		7F87F6DB2C78737E00D7E567 /* FileInfo+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3EB4BF2C75C67500B66211 /* FileInfo+.swift */; };
+		7F98F05F2C6C7E63004BA8BD /* FileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F98F05E2C6C7E62004BA8BD /* FileListViewController.swift */; };
+		7F9D76382C757888001D1FA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D76372C757888001D1FA6 /* MainViewController.swift */; };
+		7F9D763A2C757895001D1FA6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F9D76392C757895001D1FA6 /* MainStoryboard.storyboard */; };
+		7F9D763C2C7578A5001D1FA6 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D763B2C7578A5001D1FA6 /* MainWindowController.swift */; };
+		7F9E1E742C73303800BDA9E5 /* ToyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E1E732C73303800BDA9E5 /* ToyViewModel.swift */; };
+		7F9E1E762C73389500BDA9E5 /* ToyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E1E752C73389500BDA9E5 /* ToyDTO.swift */; };
+		7F9E2EB72C77411800DE4E10 /* ToyXPCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E2EB62C77411800DE4E10 /* ToyXPCService.swift */; };
+		7F9E2EB92C77411800DE4E10 /* ToyXPCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E2EB82C77411800DE4E10 /* ToyXPCProtocol.swift */; };
+		7F9E2EBB2C77411800DE4E10 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9E2EBA2C77411800DE4E10 /* main.swift */; };
+		7F9E2EC02C77411800DE4E10 /* ToyXPC.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 7F9E2EB42C77411800DE4E10 /* ToyXPC.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7FB01EB52C69FED500EAB59E /* ToyStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FB01EB42C69FED500EAB59E /* ToyStoryboard.storyboard */; };
+		7FB01EB72C69FF4600EAB59E /* ToyWindowsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB01EB62C69FF4600EAB59E /* ToyWindowsController.swift */; };
+		7FB01EB92C69FF5800EAB59E /* ToyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB01EB82C69FF5800EAB59E /* ToyViewController.swift */; };
 		7FC474A32C69FAAC00BC862F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC474A22C69FAAC00BC862F /* AppDelegate.swift */; };
 		7FC474A52C69FAAC00BC862F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC474A42C69FAAC00BC862F /* ViewController.swift */; };
 		7FC474A72C69FAAD00BC862F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FC474A62C69FAAD00BC862F /* Assets.xcassets */; };
 		7FC474AA2C69FAAD00BC862F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 7FC474A92C69FAAD00BC862F /* Base */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7F9E2EBE2C77411800DE4E10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FC474972C69FAAC00BC862F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F9E2EB32C77411800DE4E10;
+			remoteInfo = ToyXPC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7F9E2EC42C77411800DE4E10 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				7F9E2EC02C77411800DE4E10 /* ToyXPC.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7F1C583B2C76EE6F007E7B5C /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		7F2BE14E2C74972400C6B118 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		7F35A8BF2C74291E0043EFA4 /* ToyInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ToyInfo.plist; sourceTree = "<group>"; };
+		7F35A8C12C7439CD0043EFA4 /* FileListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListViewModel.swift; sourceTree = "<group>"; };
+		7F35A8C32C7439E50043EFA4 /* FileListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FileListStoryboard.storyboard; sourceTree = "<group>"; };
+		7F35A8C52C7439FB0043EFA4 /* Attribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attribute.swift; sourceTree = "<group>"; };
+		7F35A8C72C743A210043EFA4 /* FileListWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListWindowController.swift; sourceTree = "<group>"; };
+		7F3EB4BF2C75C67500B66211 /* FileInfo+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileInfo+.swift"; sourceTree = "<group>"; };
+		7F3EB4C22C75C85400B66211 /* OperationPersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationPersistenceController.swift; sourceTree = "<group>"; };
+		7F87F6C02C78242800D7E567 /* XPCService+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XPCService+.swift"; sourceTree = "<group>"; };
+		7F87F6C22C78307D00D7E567 /* ServiceListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceListener.swift; sourceTree = "<group>"; };
+		7F87F6C82C7846A400D7E567 /* ToyXPCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyXPCManager.swift; sourceTree = "<group>"; };
+		7F87F6D62C78590500D7E567 /* ToyXPCDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToyXPCDebug.entitlements; sourceTree = "<group>"; };
+		7F87F6D92C786E2C00D7E567 /* Clone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clone.swift; sourceTree = "<group>"; };
+		7F98F05E2C6C7E62004BA8BD /* FileListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListViewController.swift; sourceTree = "<group>"; };
+		7F9D76372C757888001D1FA6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7F9D76392C757895001D1FA6 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		7F9D763B2C7578A5001D1FA6 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		7F9E1E732C73303800BDA9E5 /* ToyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyViewModel.swift; sourceTree = "<group>"; };
+		7F9E1E752C73389500BDA9E5 /* ToyDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyDTO.swift; sourceTree = "<group>"; };
+		7F9E2E852C76F08F00DE4E10 /* FileInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileInfo+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		7F9E2E862C76F08F00DE4E10 /* FileInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileInfo+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		7F9E2EB42C77411800DE4E10 /* ToyXPC.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = ToyXPC.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F9E2EB62C77411800DE4E10 /* ToyXPCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyXPCService.swift; sourceTree = "<group>"; };
+		7F9E2EB82C77411800DE4E10 /* ToyXPCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyXPCProtocol.swift; sourceTree = "<group>"; };
+		7F9E2EBA2C77411800DE4E10 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7F9E2EBC2C77411800DE4E10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F9E2EBD2C77411800DE4E10 /* ToyXPC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToyXPC.entitlements; sourceTree = "<group>"; };
+		7FB01EB42C69FED500EAB59E /* ToyStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToyStoryboard.storyboard; sourceTree = "<group>"; };
+		7FB01EB62C69FF4600EAB59E /* ToyWindowsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyWindowsController.swift; sourceTree = "<group>"; };
+		7FB01EB82C69FF5800EAB59E /* ToyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyViewController.swift; sourceTree = "<group>"; };
 		7FC4749F2C69FAAC00BC862F /* ToyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC474A22C69FAAC00BC862F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FC474A42C69FAAC00BC862F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,6 +109,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7F9E2EB12C77411800DE4E10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7FC4749C2C69FAAC00BC862F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,10 +126,100 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F2BE14D2C74970800C6B118 /* Exrtension */ = {
+			isa = PBXGroup;
+			children = (
+				7F2BE14E2C74972400C6B118 /* Date+.swift */,
+				7F3EB4BF2C75C67500B66211 /* FileInfo+.swift */,
+				7F87F6C02C78242800D7E567 /* XPCService+.swift */,
+			);
+			path = Exrtension;
+			sourceTree = "<group>";
+		};
+		7F3EB4C12C75C83E00B66211 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				7F9E2E852C76F08F00DE4E10 /* FileInfo+CoreDataClass.swift */,
+				7F9E2E862C76F08F00DE4E10 /* FileInfo+CoreDataProperties.swift */,
+				7F3EB4C22C75C85400B66211 /* OperationPersistenceController.swift */,
+				7F1C583A2C76EE6F007E7B5C /* CoreData.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		7F98F05D2C6C7E51004BA8BD /* FileList */ = {
+			isa = PBXGroup;
+			children = (
+				7F35A8C32C7439E50043EFA4 /* FileListStoryboard.storyboard */,
+				7F35A8C72C743A210043EFA4 /* FileListWindowController.swift */,
+				7F98F05E2C6C7E62004BA8BD /* FileListViewController.swift */,
+				7F35A8C12C7439CD0043EFA4 /* FileListViewModel.swift */,
+				7F87F6D92C786E2C00D7E567 /* Clone.swift */,
+			);
+			path = FileList;
+			sourceTree = "<group>";
+		};
+		7F9D76362C757840001D1FA6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7F9D76392C757895001D1FA6 /* MainStoryboard.storyboard */,
+				7F9D763B2C7578A5001D1FA6 /* MainWindowController.swift */,
+				7F9D76372C757888001D1FA6 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7F9E2EB52C77411800DE4E10 /* ToyXPC */ = {
+			isa = PBXGroup;
+			children = (
+				7F87F6D62C78590500D7E567 /* ToyXPCDebug.entitlements */,
+				7F9E2EB62C77411800DE4E10 /* ToyXPCService.swift */,
+				7F9E2EB82C77411800DE4E10 /* ToyXPCProtocol.swift */,
+				7F87F6C22C78307D00D7E567 /* ServiceListener.swift */,
+				7F87F6C82C7846A400D7E567 /* ToyXPCManager.swift */,
+				7F9E2EBA2C77411800DE4E10 /* main.swift */,
+				7F9E2EBC2C77411800DE4E10 /* Info.plist */,
+				7F9E2EBD2C77411800DE4E10 /* ToyXPC.entitlements */,
+			);
+			path = ToyXPC;
+			sourceTree = "<group>";
+		};
+		7FB01EB22C69FEA100EAB59E /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				7F9D76362C757840001D1FA6 /* Main */,
+				7F98F05D2C6C7E51004BA8BD /* FileList */,
+				7FB01EB32C69FEAD00EAB59E /* Toy */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		7FB01EB32C69FEAD00EAB59E /* Toy */ = {
+			isa = PBXGroup;
+			children = (
+				7FB01EB42C69FED500EAB59E /* ToyStoryboard.storyboard */,
+				7FB01EB62C69FF4600EAB59E /* ToyWindowsController.swift */,
+				7FB01EB82C69FF5800EAB59E /* ToyViewController.swift */,
+				7F9E1E732C73303800BDA9E5 /* ToyViewModel.swift */,
+				7F9E1E752C73389500BDA9E5 /* ToyDTO.swift */,
+			);
+			path = Toy;
+			sourceTree = "<group>";
+		};
+		7FB01EBB2C6A07F200EAB59E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F35A8C52C7439FB0043EFA4 /* Attribute.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7FC474962C69FAAC00BC862F = {
 			isa = PBXGroup;
 			children = (
+				7F35A8BF2C74291E0043EFA4 /* ToyInfo.plist */,
 				7FC474A12C69FAAC00BC862F /* ToyProject */,
+				7F9E2EB52C77411800DE4E10 /* ToyXPC */,
 				7FC474A02C69FAAC00BC862F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				7FC4749F2C69FAAC00BC862F /* ToyProject.app */,
+				7F9E2EB42C77411800DE4E10 /* ToyXPC.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,6 +236,10 @@
 		7FC474A12C69FAAC00BC862F /* ToyProject */ = {
 			isa = PBXGroup;
 			children = (
+				7F3EB4C12C75C83E00B66211 /* CoreData */,
+				7F2BE14D2C74970800C6B118 /* Exrtension */,
+				7FB01EBB2C6A07F200EAB59E /* Model */,
+				7FB01EB22C69FEA100EAB59E /* UserInterface */,
 				7FC474A22C69FAAC00BC862F /* AppDelegate.swift */,
 				7FC474A42C69FAAC00BC862F /* ViewController.swift */,
 				7FC474A62C69FAAD00BC862F /* Assets.xcassets */,
@@ -64,6 +252,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7F9E2EB32C77411800DE4E10 /* ToyXPC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F9E2EC12C77411800DE4E10 /* Build configuration list for PBXNativeTarget "ToyXPC" */;
+			buildPhases = (
+				7F9E2EB02C77411800DE4E10 /* Sources */,
+				7F9E2EB12C77411800DE4E10 /* Frameworks */,
+				7F9E2EB22C77411800DE4E10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToyXPC;
+			productName = ToyXPC;
+			productReference = 7F9E2EB42C77411800DE4E10 /* ToyXPC.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
 		7FC4749E2C69FAAC00BC862F /* ToyProject */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FC474AE2C69FAAD00BC862F /* Build configuration list for PBXNativeTarget "ToyProject" */;
@@ -71,10 +276,12 @@
 				7FC4749B2C69FAAC00BC862F /* Sources */,
 				7FC4749C2C69FAAC00BC862F /* Frameworks */,
 				7FC4749D2C69FAAC00BC862F /* Resources */,
+				7F9E2EC42C77411800DE4E10 /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7F9E2EBF2C77411800DE4E10 /* PBXTargetDependency */,
 			);
 			name = ToyProject;
 			productName = ToyProject;
@@ -91,6 +298,9 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					7F9E2EB32C77411800DE4E10 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					7FC4749E2C69FAAC00BC862F = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -110,33 +320,86 @@
 			projectRoot = "";
 			targets = (
 				7FC4749E2C69FAAC00BC862F /* ToyProject */,
+				7F9E2EB32C77411800DE4E10 /* ToyXPC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7F9E2EB22C77411800DE4E10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7FC4749D2C69FAAC00BC862F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F9D763A2C757895001D1FA6 /* MainStoryboard.storyboard in Resources */,
 				7FC474A72C69FAAD00BC862F /* Assets.xcassets in Resources */,
+				7F35A8C42C7439E50043EFA4 /* FileListStoryboard.storyboard in Resources */,
 				7FC474AA2C69FAAD00BC862F /* Base in Resources */,
+				7FB01EB52C69FED500EAB59E /* ToyStoryboard.storyboard in Resources */,
+				7F35A8C02C74291E0043EFA4 /* ToyInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7F9E2EB02C77411800DE4E10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F87F6D22C78570F00D7E567 /* OperationPersistenceController.swift in Sources */,
+				7F87F6DB2C78737E00D7E567 /* FileInfo+.swift in Sources */,
+				7F87F6D32C78571300D7E567 /* FileInfo+CoreDataProperties.swift in Sources */,
+				7F87F6D42C78571600D7E567 /* FileInfo+CoreDataClass.swift in Sources */,
+				7F9E2EB92C77411800DE4E10 /* ToyXPCProtocol.swift in Sources */,
+				7F87F6D82C786DA200D7E567 /* XPCService+.swift in Sources */,
+				7F87F6D12C78540200D7E567 /* CoreData.xcdatamodeld in Sources */,
+				7F87F6C42C7830A600D7E567 /* ServiceListener.swift in Sources */,
+				7F9E2EB72C77411800DE4E10 /* ToyXPCService.swift in Sources */,
+				7F87F6D52C7857DA00D7E567 /* Attribute.swift in Sources */,
+				7F9E2EBB2C77411800DE4E10 /* main.swift in Sources */,
+				7F87F6D72C785E4500D7E567 /* ToyViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7FC4749B2C69FAAC00BC862F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F87F6CC2C78535300D7E567 /* ToyXPCManager.swift in Sources */,
 				7FC474A52C69FAAC00BC862F /* ViewController.swift in Sources */,
+				7FB01EB92C69FF5800EAB59E /* ToyViewController.swift in Sources */,
+				7F9E1E762C73389500BDA9E5 /* ToyDTO.swift in Sources */,
+				7F35A8C22C7439CD0043EFA4 /* FileListViewModel.swift in Sources */,
 				7FC474A32C69FAAC00BC862F /* AppDelegate.swift in Sources */,
+				7F9E1E742C73303800BDA9E5 /* ToyViewModel.swift in Sources */,
+				7F87F6D02C78538700D7E567 /* ToyXPCProtocol.swift in Sources */,
+				7F9D76382C757888001D1FA6 /* MainViewController.swift in Sources */,
+				7F35A8C82C743A210043EFA4 /* FileListWindowController.swift in Sources */,
+				7F35A8C62C7439FB0043EFA4 /* Attribute.swift in Sources */,
+				7F98F05F2C6C7E63004BA8BD /* FileListViewController.swift in Sources */,
+				7FB01EB72C69FF4600EAB59E /* ToyWindowsController.swift in Sources */,
+				7F87F6DA2C786E2C00D7E567 /* Clone.swift in Sources */,
+				7F9D763C2C7578A5001D1FA6 /* MainWindowController.swift in Sources */,
+				5D79B2072C7B4E0400548585 /* Date+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F9E2EBF2C77411800DE4E10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F9E2EB32C77411800DE4E10 /* ToyXPC */;
+			targetProxy = 7F9E2EBE2C77411800DE4E10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7FC474A82C69FAAD00BC862F /* Main.storyboard */ = {
@@ -150,6 +413,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7F9E2EC22C77411800DE4E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ToyXPC/ToyXPCDebug.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ToyXPC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ToyXPC;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.your.app.ToyProject.ToyXPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7F9E2EC32C77411800DE4E10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ToyXPC/ToyXPC.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ToyXPC/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ToyXPC;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.your.app.ToyProject.ToyXPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		7FC474AC2C69FAAD00BC862F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -271,9 +577,11 @@
 		7FC474AF2C69FAAD00BC862F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ToyProject/ToyProject.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -285,6 +593,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.your.app.ToyProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,9 +605,11 @@
 		7FC474B02C69FAAD00BC862F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ToyProject/ToyProject.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -310,6 +621,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.your.app.ToyProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -321,6 +633,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7F9E2EC12C77411800DE4E10 /* Build configuration list for PBXNativeTarget "ToyXPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F9E2EC22C77411800DE4E10 /* Debug */,
+				7F9E2EC32C77411800DE4E10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7FC4749A2C69FAAC00BC862F /* Build configuration list for PBXProject "ToyProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -340,6 +661,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F1C583A2C76EE6F007E7B5C /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F1C583B2C76EE6F007E7B5C /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 7F1C583B2C76EE6F007E7B5C /* CoreData.xcdatamodel */;
+			name = CoreData.xcdatamodeld;
+			path = /Users/jieunchoi/Exosphere/ToyProject/ToyProject/ToyProject/CoreData/CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7FC474972C69FAAC00BC862F /* Project object */;
 }

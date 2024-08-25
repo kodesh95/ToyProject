@@ -9,22 +9,43 @@ import Cocoa
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
+//    var window: ToyWindowsController?
+//  var window: FileListWindowController?
+  var window: MainWindowController?
 
+  func applicationDidFinishLaunching(_ aNotification: Notification) {
+    // Insert code here to initialize your application
+//        print("App Start")
+//        NSLog("App Start")
+    window = .create()
+    window?.showWindow(self)
+  }
+
+  func applicationWillTerminate(_ aNotification: Notification) {
+    // Insert code here to tear down your application
     
+  }
 
+  func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
+    return true
+  }
 
-    func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
-    }
+  // MARK: - Core Data stack
+  // persistent container 초기화
+  lazy var persistentContainer: NSPersistentContainer = {
+    let container = NSPersistentContainer(name: "CoreData")
 
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
-    }
+    container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+      if let error = error as NSError? {
+        print("초기화 - \(error)")
+      }
+    })
+    return container
+  } ()
 
-    func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
-        return true
-    }
+  var context: NSManagedObjectContext {
+    return self.persistentContainer.viewContext
+  }
 
 
 }
-
